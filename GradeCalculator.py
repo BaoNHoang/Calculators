@@ -32,10 +32,20 @@ def calculations():
         finalPercentKeys = grade * (percentWorth / 100)
         grades.append(finalPercentKeys)
     finalGrade = (sum(grades) / sum(finalPercentWorths)) * 100
-    return f'{finalGrade:.2f}%'
+    finalLetter = letter_association(finalGrade)
+    return f'{finalGrade:.2f}% {finalLetter}'
 
-def letter_association():
-    pass
+def letter_association(percentage):
+    if 90 <= percentage <= 100:
+        return 'A'
+    elif 80 <= percentage < 90:
+        return 'B'
+    elif 70 <= percentage < 80:
+        return 'C'
+    elif 60 <= percentage < 70:
+        return 'D'
+    else:
+        return 'F'
 
 if __name__ == '__main__':
     print(f"{'|Class Grade Calculator|' : ^50}")
