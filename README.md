@@ -5,4 +5,4 @@ A repository of different calculators aimed to solve different problems. These a
 
 ## 💻 Which file to open?
 
-The objective main file is the menu file but you have the freedom to jump straight into any file wihtout issue
+The CalculatorMenuApp.py is the main menu file but you have the freedom to launch straight into any file wihtout issue
